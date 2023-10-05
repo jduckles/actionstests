@@ -1,0 +1,11 @@
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  OurSpecialJob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 Woohoo...We ran a job"
