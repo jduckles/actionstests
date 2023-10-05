@@ -17,7 +17,8 @@ jobs:
       - run: |
           git config --global user.name "Automatic Action"
           git config --global user.email "automatic@users.noreply.github.com"
-          git commit -am "Automated Commit"
+          git add output.txt
+          git commit -m "Automated Commit"
           git push origin main
         
       
