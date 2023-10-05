@@ -8,5 +8,7 @@ jobs:
   OurSpecialJob:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 Woohoo...We ran a job"
+      - run: ls -lah
+      - uses: actions/checkout@v3
+      - run: find .
       
